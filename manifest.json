@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "TDTU Schedule to Google Calendar",
+  "version": "1.0",
+  "description": "Extract TDTU schedule and export to Google Calendar (.ics)",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://lichhoc-lichthi.tdtu.edu.vn/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
